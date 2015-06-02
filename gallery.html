@@ -1,0 +1,752 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Hotel Villa Tournon</title>
+    <meta name="description" content="">
+    <!-- Responsive helper -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+
+    <!-- Fonts-->
+    <!-- Custom Fonts -->
+    <link href="css/font-awesome-4.3.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href='http://fonts.googleapis.com/css?family=Roboto:400,100,300,500,700,900' rel='stylesheet' type='text/css'>
+
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/bootstrap-responsive.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/screen.css">
+    <!--scripts-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+	<!-- Bootstrap js -->
+  	<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+  	<!-- custom js -->
+	<script src="js/jquery.query-object.js"></script>
+	<script src="js/angular.js"></script>
+	<script src="js/angular-local-storage.js"></script>
+	<script src="js/common.js"></script>
+	<script src="js/language.js"></script>
+	<script src="js/bookingLogic.js"></script>
+  	<script type="text/javascript" src="js/simplycarousel.js"></script>
+	<script src="js/plugins.js"></script>
+	<script src="js/options.js"></script>
+</head>
+
+<body>
+    <div id="home" class="boxed-view">
+        <header class="main-header clearfix">
+            <!-- Header Shorcode Area -->
+            <div class="header-bar">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-6 col-sm-8">
+                         	<ul class="stars text-golden">
+								<li><i class="icon-573 font-13x"></i></li>
+								<li><i class="icon-573 font-13x"></i></li>
+								<li><i class="icon-573 font-13x"></i></li>
+								<li><i class="icon-573 font-13x"></i></li>
+							</ul>
+                            <ul class="inline-list uppercase font-small header-meta">
+                                <li><i class="icon-312 font-13x"></i> San Jose, Costa Rica</li>
+                                <li><i class="icon-274 font-13x"></i> hvillas@racsa.co.cr</li>
+                            </ul>
+                        </div>
+                        <div class="col-md-6 col-sm-4">
+							<div class="socialbtns inline-list to-right header-social">
+								<ul>
+									<li><a href="#" class="fa fa-lg fa-facebook"></a></li>
+									<li><a href="#" class="fa fa-lg fa-youtube"></a></li>
+									<li>
+										<label class="check-fancy white round-corners">
+											<b>Sí</b>
+											<input type="checkbox">
+											<span class="round-corners gold"></span>
+											<b>No</b>
+										</label>
+										<span class="lenguage-span">Español ?</span>
+									</li>
+								</ul>
+							</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- /.header-bar -->
+
+            <div class="nav-bar sticky-bar grey">
+                <!-- .mega-menu helper class ued as switcher -->
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-4 col-xs-8">
+                            <!-- Logo Area -->
+                            <figure class="identity">
+                                <a href="index.html">
+                                    <img src="img/logo.png" class="logo-img" width="150" height="150" alt="Hotel Villa Tournon logo">
+                                </a>
+                            </figure>
+                        </div>
+                        <!-- /.col-md-2 -->
+                        <div class="col-md-8 col-xs-4">
+                            <!-- Menu Area -->
+                            <nav class="main-nav clearfix">
+                                <!-- .mega-menu helper class ued as switcher -->
+                                <ul class="clean-list to-right clean-list-padding">
+                                    <!-- .to-right, to-left, .center-me helper class-->
+                                    <li><a href="index.html">{{Home}}</a></li>
+                                    <li><a href="rooms.html">{{Rooms}}</a></li>
+                                    <li><a href="booking.html">{{Booking}}</a></li>
+                                    <li><a href="el-hotel.html">Hotel</a></li>
+                                    <li><a href="about.html">{{About}}</a></li>
+                                    <li><a href="contact-us.html">{{Contact}}</a></li>
+                                </ul>
+                            </nav>
+                            <!-- /.main-nav -->
+
+                            <a href="#" class="mobile-switch to-right">
+                                <i class="icon-467 font-2x text-dark hover-text-grey"></i>
+                            </a>
+                        </div>
+                        <!-- /.col-md-10 -->
+                    </div>
+                    <!-- /.row -->
+                </div>
+                <!-- /.container -->
+            </div>
+            <!-- /.nav-bar -->
+        </header>
+        <!-- /.main-nav -->
+
+        <!-- main content -->
+        <section class="box">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12">
+						<div class="text-dark-blue text-center fancy-heading">
+							<h1 class="font-700">Hotel Gallery</h1>
+							<hr class="text-dark-blue size-30 center-me">			
+						</div>
+					</div>
+				</div> <!-- /.row -->
+				<ul class="clean-list row gallery-items">
+					<li class="col-md-3 col-xs-6">
+						<div class="shape-square middle-corners">
+							<a href="img/gallery/DSC_1962.jpg" class="zoom-image">
+								<img src="img/gallery/gallery_500x500/DSC_1962.jpg" alt="gallery item">
+							</a>
+						</div>
+					</li>
+					<li class="col-md-3 col-xs-6">
+						<div class="shape-square middle-corners">
+							<a href="img/gallery/DSC_1979.jpg" class="zoom-image">
+								<img src="img/gallery/gallery_500x500/DSC_1979.jpg" alt="gallery item">
+							</a>
+						</div>
+					</li>
+					<li class="col-md-3 col-xs-6">
+						<div class="shape-square middle-corners">
+							<a href="img/gallery/DSC_1987.jpg" class="zoom-image">
+								<img src="img/gallery/gallery_500x500/DSC_1987.jpg" alt="gallery item">
+							</a>
+						</div>
+					</li>
+					<li class="col-md-3 col-xs-6">
+						<div class="shape-square middle-corners">
+							<a href="img/gallery/DSC_1997.jpg" class="zoom-image">
+								<img src="img/gallery/gallery_500x500/DSC_1997.jpg" alt="gallery item">
+							</a>
+						</div>
+					</li>
+					<li class="col-md-3 col-xs-6">
+						<div class="shape-square middle-corners">
+							<a href="img/gallery/DSC_1998.jpg" class="zoom-image">
+								<img src="img/gallery/gallery_500x500/DSC_1998.jpg" alt="gallery item">
+							</a>
+						</div>
+					</li>
+					<li class="col-md-3 col-xs-6">
+						<div class="shape-square middle-corners">
+							<a href="img/gallery/DSC_2010.jpg" class="zoom-image">
+								<img src="img/gallery/gallery_500x500/DSC_2010.jpg" alt="gallery item">
+							</a>
+						</div>
+					</li>
+					<li class="col-md-3 col-xs-6">
+						<div class="shape-square middle-corners">
+							<a href="img/gallery/DSC_2013.jpg" class="zoom-image">
+								<img src="img/gallery/gallery_500x500/DSC_2013.jpg" alt="gallery item">
+							</a>
+						</div>
+					</li>
+					<li class="col-md-3 col-xs-6">
+						<div class="shape-square middle-corners">
+							<a href="img/gallery/DSC_2051.jpg" class="zoom-image">
+								<img src="img/gallery/gallery_500x500/DSC_2051.jpg" alt="gallery item">
+							</a>
+						</div>
+					</li>
+					<li class="col-md-3 col-xs-6">
+						<div class="shape-square middle-corners">
+							<a href="img/gallery/DSC_2065.jpg" class="zoom-image">
+								<img src="img/gallery/gallery_500x500/DSC_2065.jpg" alt="gallery item">
+							</a>
+						</div>
+					</li>
+					<li class="col-md-3 col-xs-6">
+						<div class="shape-square middle-corners">
+							<a href="img/gallery/DSC_2097.jpg" class="zoom-image">
+								<img src="img/gallery/gallery_500x500/DSC_2097.jpg" alt="gallery item">
+							</a>
+						</div>
+					</li>
+					<li class="col-md-3 col-xs-6">
+						<div class="shape-square middle-corners">
+							<a href="img/gallery/DSC_2115.jpg" class="zoom-image">
+								<img src="img/gallery/gallery_500x500/DSC_2115.jpg" alt="gallery item">
+							</a>
+						</div>
+					</li>
+					<li class="col-md-3 col-xs-6">
+						<div class="shape-square middle-corners">
+							<a href="img/gallery/DSC_2129.jpg" class="zoom-image">
+								<img src="img/gallery/gallery_500x500/DSC_2129.jpg" alt="gallery item">
+							</a>
+						</div>
+					</li>
+					<li class="col-md-3 col-xs-6">
+						<div class="shape-square middle-corners">
+							<a href="img/gallery/DSC_2134.jpg" class="zoom-image">
+								<img src="img/gallery/gallery_500x500/DSC_2134.jpg" alt="gallery item">
+							</a>
+						</div>
+					</li>
+					<li class="col-md-3 col-xs-6">
+						<div class="shape-square middle-corners">
+							<a href="img/gallery/DSC_2157.jpg" class="zoom-image">
+								<img src="img/gallery/gallery_500x500/DSC_2157.jpg" alt="gallery item">
+							</a>
+						</div>
+					</li>
+					<li class="col-md-3 col-xs-6">
+						<div class="shape-square middle-corners">
+							<a href="img/gallery/DSC_2169.jpg" class="zoom-image">
+								<img src="img/gallery/gallery_500x500/DSC_2169.jpg" alt="gallery item">
+							</a>
+						</div>
+					</li>
+					<li class="col-md-3 col-xs-6">
+						<div class="shape-square middle-corners">
+							<a href="img/gallery/DSC_2203.jpg" class="zoom-image">
+								<img src="img/gallery/gallery_500x500/DSC_2203.jpg" alt="gallery item">
+							</a>
+						</div>
+					</li>
+					<li class="col-md-3 col-xs-6">
+						<div class="shape-square middle-corners">
+							<a href="img/gallery/DSC_2237.jpg" class="zoom-image">
+								<img src="img/gallery/gallery_500x500/DSC_2237.jpg" alt="gallery item">
+							</a>
+						</div>
+					</li>
+					<li class="col-md-3 col-xs-6">
+						<div class="shape-square middle-corners">
+							<a href="img/gallery/DSC_2244.jpg" class="zoom-image">
+								<img src="img/gallery/gallery_500x500/DSC_2244.jpg" alt="gallery item">
+							</a>
+						</div>
+					</li>
+					<li class="col-md-3 col-xs-6">
+						<div class="shape-square middle-corners">
+							<a href="img/gallery/DSC_2301.jpg" class="zoom-image">
+								<img src="img/gallery/gallery_500x500/DSC_2301.jpg" alt="gallery item">
+							</a>
+						</div>
+					</li>
+					<li class="col-md-3 col-xs-6">
+						<div class="shape-square middle-corners">
+							<a href="img/gallery/DSC_2328.jpg" class="zoom-image">
+								<img src="img/gallery/gallery_500x500/DSC_2328.jpg" alt="gallery item">
+							</a>
+						</div>
+					</li>
+					<li class="col-md-3 col-xs-6">
+						<div class="shape-square middle-corners">
+							<a href="img/gallery/DSC_2340.jpg" class="zoom-image">
+								<img src="img/gallery/gallery_500x500/DSC_2340.jpg" alt="gallery item">
+							</a>
+						</div>
+					</li>
+					<li class="col-md-3 col-xs-6">
+						<div class="shape-square middle-corners">
+							<a href="img/gallery/DSC_2359.jpg" class="zoom-image">
+								<img src="img/gallery/gallery_500x500/DSC_2359.jpg" alt="gallery item">
+							</a>
+						</div>
+					</li>
+					<li class="col-md-3 col-xs-6">
+						<div class="shape-square middle-corners">
+							<a href="img/gallery/DSC_2369.jpg" class="zoom-image">
+								<img src="img/gallery/gallery_500x500/DSC_2369.jpg" alt="gallery item">
+							</a>
+						</div>
+					</li>
+					<li class="col-md-3 col-xs-6">
+						<div class="shape-square middle-corners">
+							<a href="img/gallery/DSC_2392.jpg" class="zoom-image">
+								<img src="img/gallery/gallery_500x500/DSC_2392.jpg" alt="gallery item">
+							</a>
+						</div>
+					</li>
+					<li class="col-md-3 col-xs-6">
+						<div class="shape-square middle-corners">
+							<a href="img/gallery/DSC_2398.jpg" class="zoom-image">
+								<img src="img/gallery/gallery_500x500/DSC_2398.jpg" alt="gallery item">
+							</a>
+						</div>
+					</li>
+					<li class="col-md-3 col-xs-6">
+						<div class="shape-square middle-corners">
+							<a href="img/gallery/DSC_2401.jpg" class="zoom-image">
+								<img src="img/gallery/gallery_500x500/DSC_2401.jpg" alt="gallery item">
+							</a>
+						</div>
+					</li>
+					<li class="col-md-3 col-xs-6">
+						<div class="shape-square middle-corners">
+							<a href="img/gallery/DSC_2405.jpg" class="zoom-image">
+								<img src="img/gallery/gallery_500x500/DSC_2405.jpg" alt="gallery item">
+							</a>
+						</div>
+					</li>
+					<li class="col-md-3 col-xs-6">
+						<div class="shape-square middle-corners">
+							<a href="img/gallery/DSC_2409.jpg" class="zoom-image">
+								<img src="img/gallery/gallery_500x500/DSC_2409.jpg" alt="gallery item">
+							</a>
+						</div>
+					</li>
+					<li class="col-md-3 col-xs-6">
+						<div class="shape-square middle-corners">
+							<a href="img/gallery/DSC_2413.jpg" class="zoom-image">
+								<img src="img/gallery/gallery_500x500/DSC_2413.jpg" alt="gallery item">
+							</a>
+						</div>
+					</li>
+					<li class="col-md-3 col-xs-6">
+						<div class="shape-square middle-corners">
+							<a href="img/gallery/DSC_2420.jpg" class="zoom-image">
+								<img src="img/gallery/gallery_500x500/DSC_2420.jpg" alt="gallery item">
+							</a>
+						</div>
+					</li>
+					<li class="col-md-3 col-xs-6">
+						<div class="shape-square middle-corners">
+							<a href="img/gallery/DSC_2435.jpg" class="zoom-image">
+								<img src="img/gallery/gallery_500x500/DSC_2435.jpg" alt="gallery item">
+							</a>
+						</div>
+					</li>
+					<li class="col-md-3 col-xs-6">
+						<div class="shape-square middle-corners">
+							<a href="img/gallery/DSC_2439.jpg" class="zoom-image">
+								<img src="img/gallery/gallery_500x500/DSC_2439.jpg" alt="gallery item">
+							</a>
+						</div>
+					</li>
+					<li class="col-md-3 col-xs-6">
+						<div class="shape-square middle-corners">
+							<a href="img/gallery/DSC_2446.jpg" class="zoom-image">
+								<img src="img/gallery/gallery_500x500/DSC_2446.jpg" alt="gallery item">
+							</a>
+						</div>
+					</li>
+					<li class="col-md-3 col-xs-6">
+						<div class="shape-square middle-corners">
+							<a href="img/gallery/DSC_2456.jpg" class="zoom-image">
+								<img src="img/gallery/gallery_500x500/DSC_2456.jpg" alt="gallery item">
+							</a>
+						</div>
+					</li>
+					<li class="col-md-3 col-xs-6">
+						<div class="shape-square middle-corners">
+							<a href="img/gallery/DSC_2471.jpg" class="zoom-image">
+								<img src="img/gallery/gallery_500x500/DSC_2471.jpg" alt="gallery item">
+							</a>
+						</div>
+					</li>
+					<li class="col-md-3 col-xs-6">
+						<div class="shape-square middle-corners">
+							<a href="img/gallery/DSC_2478.jpg" class="zoom-image">
+								<img src="img/gallery/gallery_500x500/DSC_2478.jpg" alt="gallery item">
+							</a>
+						</div>
+					</li>
+					<li class="col-md-3 col-xs-6">
+						<div class="shape-square middle-corners">
+							<a href="img/gallery/DSC_2481.jpg" class="zoom-image">
+								<img src="img/gallery/gallery_500x500/DSC_2481.jpg" alt="gallery item">
+							</a>
+						</div>
+					</li>
+					<li class="col-md-3 col-xs-6">
+						<div class="shape-square middle-corners">
+							<a href="img/gallery/DSC_2494.jpg" class="zoom-image">
+								<img src="img/gallery/gallery_500x500/DSC_2494.jpg" alt="gallery item">
+							</a>
+						</div>
+					</li>
+					<li class="col-md-3 col-xs-6">
+						<div class="shape-square middle-corners">
+							<a href="img/gallery/DSC_2515.jpg" class="zoom-image">
+								<img src="img/gallery/gallery_500x500/DSC_2515.jpg" alt="gallery item">
+							</a>
+						</div>
+					</li>
+					<li class="col-md-3 col-xs-6">
+						<div class="shape-square middle-corners">
+							<a href="img/gallery/DSC_2521.jpg" class="zoom-image">
+								<img src="img/gallery/gallery_500x500/DSC_2521.jpg" alt="gallery item">
+							</a>
+						</div>
+					</li>
+					<li class="col-md-3 col-xs-6">
+						<div class="shape-square middle-corners">
+							<a href="img/gallery/DSC_2538.jpg" class="zoom-image">
+								<img src="img/gallery/gallery_500x500/DSC_2538.jpg" alt="gallery item">
+							</a>
+						</div>
+					</li>
+					<li class="col-md-3 col-xs-6">
+						<div class="shape-square middle-corners">
+							<a href="img/gallery/DSC_2542.jpg" class="zoom-image">
+								<img src="img/gallery/gallery_500x500/DSC_2542.jpg" alt="gallery item">
+							</a>
+						</div>
+					</li>
+					<li class="col-md-3 col-xs-6">
+						<div class="shape-square middle-corners">
+							<a href="img/gallery/DSC_2548.jpg" class="zoom-image">
+								<img src="img/gallery/gallery_500x500/DSC_2548.jpg" alt="gallery item">
+							</a>
+						</div>
+					</li>
+					<li class="col-md-3 col-xs-6">
+						<div class="shape-square middle-corners">
+							<a href="img/gallery/DSC_2553.jpg" class="zoom-image">
+								<img src="img/gallery/gallery_500x500/DSC_2553.jpg" alt="gallery item">
+							</a>
+						</div>
+					</li>
+					<li class="col-md-3 col-xs-6">
+						<div class="shape-square middle-corners">
+							<a href="img/gallery/DSC_2558.jpg" class="zoom-image">
+								<img src="img/gallery/gallery_500x500/DSC_2558.jpg" alt="gallery item">
+							</a>
+						</div>
+					</li>
+					<li class="col-md-3 col-xs-6">
+						<div class="shape-square middle-corners">
+							<a href="img/gallery/DSC_2566.jpg" class="zoom-image">
+								<img src="img/gallery/gallery_500x500/DSC_2566.jpg" alt="gallery item">
+							</a>
+						</div>
+					</li>
+					<li class="col-md-3 col-xs-6">
+						<div class="shape-square middle-corners">
+							<a href="img/gallery/DSC_2568.jpg" class="zoom-image">
+								<img src="img/gallery/gallery_500x500/DSC_2568.jpg" alt="gallery item">
+							</a>
+						</div>
+					</li>
+					<li class="col-md-3 col-xs-6">
+						<div class="shape-square middle-corners">
+							<a href="img/gallery/DSC_2570.jpg" class="zoom-image">
+								<img src="img/gallery/gallery_500x500/DSC_2570.jpg" alt="gallery item">
+							</a>
+						</div>
+					</li>
+					<li class="col-md-3 col-xs-6">
+						<div class="shape-square middle-corners">
+							<a href="img/gallery/DSC_2572.jpg" class="zoom-image">
+								<img src="img/gallery/gallery_500x500/DSC_2572.jpg" alt="gallery item">
+							</a>
+						</div>
+					</li>
+					<li class="col-md-3 col-xs-6">
+						<div class="shape-square middle-corners">
+							<a href="img/gallery/DSC_2575.jpg" class="zoom-image">
+								<img src="img/gallery/gallery_500x500/DSC_2575.jpg" alt="gallery item">
+							</a>
+						</div>
+					</li>
+					<li class="col-md-3 col-xs-6">
+						<div class="shape-square middle-corners">
+							<a href="img/gallery/DSC_2577.jpg" class="zoom-image">
+								<img src="img/gallery/gallery_500x500/DSC_2577.jpg" alt="gallery item">
+							</a>
+						</div>
+					</li>
+					<li class="col-md-3 col-xs-6">
+						<div class="shape-square middle-corners">
+							<a href="img/gallery/DSC_2583.jpg" class="zoom-image">
+								<img src="img/gallery/gallery_500x500/DSC_2583.jpg" alt="gallery item">
+							</a>
+						</div>
+					</li>
+					<li class="col-md-3 col-xs-6">
+						<div class="shape-square middle-corners">
+							<a href="img/gallery/DSC_2591.jpg" class="zoom-image">
+								<img src="img/gallery/gallery_500x500/DSC_2591.jpg" alt="gallery item">
+							</a>
+						</div>
+					</li>
+					<li class="col-md-3 col-xs-6">
+						<div class="shape-square middle-corners">
+							<a href="img/gallery/DSC_2593.jpg" class="zoom-image">
+								<img src="img/gallery/gallery_500x500/DSC_2593.jpg" alt="gallery item">
+							</a>
+						</div>
+					</li>
+					<li class="col-md-3 col-xs-6">
+						<div class="shape-square middle-corners">
+							<a href="img/gallery/DSC_2595.jpg" class="zoom-image">
+								<img src="img/gallery/gallery_500x500/DSC_2595.jpg" alt="gallery item">
+							</a>
+						</div>
+					</li>
+					<li class="col-md-3 col-xs-6">
+						<div class="shape-square middle-corners">
+							<a href="img/gallery/DSC_2599.jpg" class="zoom-image">
+								<img src="img/gallery/gallery_500x500/DSC_2599.jpg" alt="gallery item">
+							</a>
+						</div>
+					</li>
+					<li class="col-md-3 col-xs-6">
+						<div class="shape-square middle-corners">
+							<a href="img/gallery/DSC_2601.jpg" class="zoom-image">
+								<img src="img/gallery/gallery_500x500/DSC_2601.jpg" alt="gallery item">
+							</a>
+						</div>
+					</li>
+					<li class="col-md-3 col-xs-6">
+						<div class="shape-square middle-corners">
+							<a href="img/gallery/DSC_2603.jpg" class="zoom-image">
+								<img src="img/gallery/gallery_500x500/DSC_2603.jpg" alt="gallery item">
+							</a>
+						</div>
+					</li>
+					<li class="col-md-3 col-xs-6">
+						<div class="shape-square middle-corners">
+							<a href="img/gallery/DSC_2612.jpg" class="zoom-image">
+								<img src="img/gallery/gallery_500x500/DSC_2612.jpg" alt="gallery item">
+							</a>
+						</div>
+					</li>
+					<li class="col-md-3 col-xs-6">
+						<div class="shape-square middle-corners">
+							<a href="img/gallery/DSC_2617.jpg" class="zoom-image">
+								<img src="img/gallery/gallery_500x500/DSC_2617.jpg" alt="gallery item">
+							</a>
+						</div>
+					</li>
+					<li class="col-md-3 col-xs-6">
+						<div class="shape-square middle-corners">
+							<a href="img/gallery/DSC_2618.jpg" class="zoom-image">
+								<img src="img/gallery/gallery_500x500/DSC_2618.jpg" alt="gallery item">
+							</a>
+						</div>
+					</li>
+					<li class="col-md-3 col-xs-6">
+						<div class="shape-square middle-corners">
+							<a href="img/gallery/DSC_2619.jpg" class="zoom-image">
+								<img src="img/gallery/gallery_500x500/DSC_2619.jpg" alt="gallery item">
+							</a>
+						</div>
+					</li>
+					<li class="col-md-3 col-xs-6">
+						<div class="shape-square middle-corners">
+							<a href="img/gallery/DSC_2621.jpg" class="zoom-image">
+								<img src="img/gallery/gallery_500x500/DSC_2621.jpg" alt="gallery item">
+							</a>
+						</div>
+					</li>
+					<li class="col-md-3 col-xs-6">
+						<div class="shape-square middle-corners">
+							<a href="img/gallery/DSC_2623.jpg" class="zoom-image">
+								<img src="img/gallery/gallery_500x500/DSC_2623.jpg" alt="gallery item">
+							</a>
+						</div>
+					</li>
+					<li class="col-md-3 col-xs-6">
+						<div class="shape-square middle-corners">
+							<a href="img/gallery/DSC_2640.jpg" class="zoom-image">
+								<img src="img/gallery/gallery_500x500/DSC_2640.jpg" alt="gallery item">
+							</a>
+						</div>
+					</li>
+					<li class="col-md-3 col-xs-6">
+						<div class="shape-square middle-corners">
+							<a href="img/gallery/DSC_2648.jpg" class="zoom-image">
+								<img src="img/gallery/gallery_500x500/DSC_2648.jpg" alt="gallery item">
+							</a>
+						</div>
+					</li>
+					<li class="col-md-3 col-xs-6">
+						<div class="shape-square middle-corners">
+							<a href="img/gallery/DSC_2657.jpg" class="zoom-image">
+								<img src="img/gallery/gallery_500x500/DSC_2657.jpg" alt="gallery item">
+							</a>
+						</div>
+					</li>
+					<li class="col-md-3 col-xs-6">
+						<div class="shape-square middle-corners">
+							<a href="img/gallery/DSC_2669.jpg" class="zoom-image">
+								<img src="img/gallery/gallery_500x500/DSC_2669.jpg" alt="gallery item">
+							</a>
+						</div>
+					</li>
+					<li class="col-md-3 col-xs-6">
+						<div class="shape-square middle-corners">
+							<a href="img/gallery/DSC_2687.jpg" class="zoom-image">
+								<img src="img/gallery/gallery_500x500/DSC_2687.jpg" alt="gallery item">
+							</a>
+						</div>
+					</li>
+					<li class="col-md-3 col-xs-6">
+						<div class="shape-square middle-corners">
+							<a href="img/gallery/DSC_2690.jpg" class="zoom-image">
+								<img src="img/gallery/gallery_500x500/DSC_2690.jpg" alt="gallery item">
+							</a>
+						</div>
+					</li>
+					<li class="col-md-3 col-xs-6">
+						<div class="shape-square middle-corners">
+							<a href="img/gallery/DSC_2030.jpg" class="zoom-image">
+								<img src="img/gallery/gallery_500x500/DSC_2030.jpg" alt="gallery item">
+							</a>
+						</div>
+					</li>
+					<li class="col-md-3 col-xs-6">
+						<div class="shape-square middle-corners">
+							<a href="img/gallery/DSC_2197.jpg" class="zoom-image">
+								<img src="img/gallery/gallery_500x500/DSC_2197.jpg" alt="gallery item">
+							</a>
+						</div>
+					</li>
+					<li class="col-md-3 col-xs-6">
+						<div class="shape-square middle-corners">
+							<a href="img/gallery/DSC_2225.jpg" class="zoom-image">
+								<img src="img/gallery/gallery_500x500/DSC_2225.jpg" alt="gallery item">
+							</a>
+						</div>
+					</li>
+					<li class="col-md-3 col-xs-6">
+						<div class="shape-square middle-corners">
+							<a href="img/gallery/DSC_2262.jpg" class="zoom-image">
+								<img src="img/gallery/gallery_500x500/DSC_2262.jpg" alt="gallery item">
+							</a>
+						</div>
+					</li>
+					<li class="col-md-3 col-xs-6">
+						<div class="shape-square middle-corners">
+							<a href="img/gallery/DSC_2279.jpg" class="zoom-image">
+								<img src="img/gallery/gallery_500x500/DSC_2279.jpg" alt="gallery item">
+							</a>
+						</div>
+					</li>
+					<li class="col-md-3 col-xs-6">
+						<div class="shape-square middle-corners">
+							<a href="img/gallery/DSC_2286.jpg" class="zoom-image">
+								<img src="img/gallery/gallery_500x500/DSC_2286.jpg" alt="gallery item">
+							</a>
+						</div>
+					</li>
+					<li class="col-md-3 col-xs-6">
+						<div class="shape-square middle-corners">
+							<a href="img/gallery/DSC_2309.jpg" class="zoom-image">
+								<img src="img/gallery/gallery_500x500/DSC_2309.jpg" alt="gallery item">
+							</a>
+						</div>
+					</li>
+					<li class="col-md-3 col-xs-6">
+						<div class="shape-square middle-corners">
+							<a href="img/gallery/DSC_2330.jpg" class="zoom-image">
+								<img src="img/gallery/gallery_500x500/DSC_2330.jpg" alt="gallery item">
+							</a>
+						</div>
+					</li>
+					<li class="col-md-3 col-xs-6">
+						<div class="shape-square middle-corners">
+							<a href="img/gallery/DSC_2385.jpg" class="zoom-image">
+								<img src="img/gallery/gallery_500x500/DSC_2385.jpg" alt="gallery item">
+							</a>
+						</div>
+					</li>
+					<li class="col-md-3 col-xs-6">
+						<div class="shape-square middle-corners">
+							<a href="img/gallery/DSC_2469.jpg" class="zoom-image">
+								<img src="img/gallery/gallery_500x500/DSC_2469.jpg" alt="gallery item">
+							</a>
+						</div>
+					</li>
+				</ul>
+			</div> <!-- /.container -->
+		</section> <!-- /.box -->
+        
+		<footer class="main-footer">
+			<!-- Footer widgets -->
+			<div class="big-footer box footer-box dark-less">
+				<div class="container">
+					<div class="footer-sidebar row">
+
+						<div class="col-md-4 col-sm-6 widget">
+							<figure>
+								<a href="index.html">
+									<img src="img/logo.png" class="center-block" width="150" height="150" alt="Hotel Villa Tournon logo">
+								</a>
+							</figure>
+							<p>Hotel Villa Tournon always serves you in a style reserved to serve the most demanding guest.</p>
+						</div>
+						
+						<div class="col-md-4 center-social col-sm-6 widget post-widget">
+							<div class="text-dark-black text-center fancy-heading">
+								<h4 class="font-700">Follow us</h4>
+								<hr class="text-dark-black size-30 center-me">				
+							</div>
+							<div class="socialbtns inline-list header-social">
+								<ul>
+									<li><a href="#" class="fa fa-lg fa-facebook"></a></li>
+									<li><a href="#" class="fa fa-lg fa-youtube"></a></li>
+								</ul>
+							</div>						
+						</div>
+					<div class="col-md-4 col-sm-12 widget">
+							<ul class="clean-list contact-info text-dark-black uppercase">
+								<li><i class="fa fa-paper-plane fa-2x"></i> <b>Address: </b>Apartado 6606 - 1000 San José, Costa Rica</li>
+								<li><i class="fa fa-envelope fa-2x"></i> <b>E-mail: </b> <a href="mailto:hvillas@racsa.co.cr">hvillas@racsa.co.cr</a></li>
+								<li itemprop="telephone"><i class="fa fa-phone fa-2x"></i> <b>Phone: </b> <a href="tel:+50622336622">(506) 2233 66 22</a></li>
+								<li itemprop="telephone"><i class="fa fa-fax fa-2x"></i> <b>Fax: </b> <a href="tel:+50622225211">(506) 2222 52 11</a></li>
+							</ul>
+						</div> 
+					</div><!-- /.row -->
+				</div><!-- /.container -->
+			</div><!-- /.big-footer -->	
+			<div class="small-footer">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-12">
+							<p class="center-social copyright center-me font-small">
+								<span class="uppercase" >copyright {{CurrentYear}}</span>
+								<span> Developed by</span>
+								<span><a href="https://www.linkedin.com/profile/view?id=341417214&trk=nav_responsive_tab_profile_pic">Natalia Alpízar</a>and<a href="https://www.linkedin.com/profile/view?id=168344330&authType=NAME_SEARCH&authToken=TlQX&locale=es_ES&trk=tyah2&trkInfo=idx%3A1-1-1%2CtarId%3A1426458567389%2Ctas%3Acamilo">Camilo Agüero</a></span>	
+							</p>
+						</div>
+					</div> <!-- /.row -->
+				</div>			
+			</div><!-- /.small-footer -->			
+		</footer><!-- /.main-footer -->
+	</div><!-- /.boxed-view -->
+</body>
+</html>
